@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriGrow</title>
+     <link rel="icon" type="image/svg+xml" href="./Assets/Headder/Logo.png"/>
+    <link rel="stylesheet" href="./Head.css">
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./MiddleBody.css">
+    <link rel="stylesheet" href="./LastPage.css">
+    <link rel="stylesheet" href="./HiddenList.css">
+    
+     <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body >
+     <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="./Assets/Headder/Logo.png" alt="Leaf Logo">
+                AgriGrow
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" onclick="window.location.href='./AboutPage/About.html'">About</a></li>
+                <li id="navProductDropdown" onmouseenter="showDropdown()" onmouseleave="hideDropdown()">
+                    <a href="#products">Products</a>
+                  <div id="navProductDropdownContent" class="dropdown-content">
+                    <a href="#Bonsai" onclick="window.location.href='./Products/Bonsai.html'">Bonsai</a>
+                    <a href="#fertilizers" onclick="window.location.href='Products/Fertilizers/Fertilizer.html'">Fertilizers</a>
+                    <a href="#tools" onclick="window.location.href='ToolProductPage/Tools.html'">Tools</a>
+                    <a href="#Flowers Plant">Flowers Plants</a>
+                  </div>
+                </li>
+                <li><a href="#services" onclick="window.location.href='./ServicePage/Service.html'">Services</a></li>
+                <li><a href="#contact" onclick="window.location.href='./ContactPage/Contact.html'">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <!-- ! Body Started -->
+    <!-- 🌿 AgriGrow Interactive Body Section with AI/CSS-like Design -->
+<section id="home" class="hero-section">
+  <div class="hero-content">
+    <h1>Welcome to <span>AgriGrow</span></h1>
+    <p>Empowering Farmers with Knowledge, Technology & Nature</p>
+    <a href="#features" class="hero-btn">Explore More</a>
+  </div>
+</section>
+
+<!-- 🌱 Features Section with Hover Plates -->
+<section id="features" class="features-section">
+  <h2>Our Focus Areas</h2>
+  <div class="feature-cards">
+    <div class="card" onclick="handleCardClick(this)">
+      <img src="./Assets/Headder/img1.png" alt="Organic Farming">
+      <h3>Organic Farming</h3>
+      <p>Chemical-free crops, natural soil health, and traditional wisdom.</p>
+    </div>
+    <div class="card" onclick="highlightCard(this)">
+      <img src="./Assets/Headder/img2.png" alt="Smart Tech">
+      <h3>Smart Technology</h3>
+      <p>IoT-based monitoring, AI-predicted harvesting, and precision tools.</p>
+    </div>
+    <div class="card" onclick="highlightCard(this)">
+      <img src="./Assets/Headder/img3.png" alt="Sustainability">
+      <h3>Sustainable Growth</h3>
+      <p>Eco-balance, biodiversity, and water conservation methods.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ! Pages -->
+ 
+
+<!-- 🌾 Pages Navigation Buttons -->
+<section id="pages" class="pages-section">
+  <h2>Explore More</h2>
+  <div class="page-links">
+    <button class="page-btn" data-target="products">🌽 View Products</button>
+    <button class="page-btn" data-target="services">🚜 View Services</button>
+    <button class="page-btn" data-target="contact">📬 Contact Us</button>
+  </div>
+</section>
+
+<!-- ! Last Page -->
+ <header class="new-header">
+    <h1>🌾 What's New at AgriGrow?</h1>
+    <p>Stay updated with the latest trends and breakthroughs in agriculture.</p>
+  </header>
+
+  <main class="news-container">
+    <div class="news-card" id="news1">
+      <i class="fas fa-seedling"></i>
+      <h2>AI Crop Monitoring Launched</h2>
+      <p>We've integrated AI into our crop monitoring system for real-time updates.</p>
+      <button class="read-more">Read More</button>
+    </div>
+
+    <div class="news-card" id="news2">
+      <i class="fas fa-wind"></i>
+      <h2>Solar-Powered Irrigation</h2>
+      <p>Introducing sustainable irrigation powered by solar energy.</p>
+      <button class="read-more">Read More</button>
+    </div>
+
+    <div class="news-card" id="news3">
+      <i class="fas fa-robot"></i>
+      <h2>Robotic Weed Control</h2>
+      <p>Our autonomous robots are now helping farmers reduce manual labor.</p>
+      <button class="read-more">Read More</button>
+    </div>
+  </main>
+
+    <script src="./Head.js"></script>
+    <script src="./body.js"></script>
+    <script src="./MiddleBody.js"></script>
+    <script src="./LastPage.js"></script>
+    <script src="./HiddenList.js"></script>
+
+</body>
+</html>
